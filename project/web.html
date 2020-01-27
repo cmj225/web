@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>cmj225/home</title>
+        <!-- Bootstrap 4 Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- shrink-to-fit=no"> -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Awesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="100">
+        <!-- top navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#050505;"> <!-- TODO: find/test sticky navbar -->
+            <!-- logo -->
+            <a class="navbar-brand" href="../index.html"><i class="far fa-compass"></i></a>
+            <!-- collapsible button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navigation link -->
+            <div class="collase navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <!-- drop down -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Project</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Create Web</a>
+                            <a class="dropdown-item" href="#">Problem Solving</a>
+                        </div>
+                    </li> 
+                    <!-- drop down -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Basic</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Calculus</a>
+                            <a class="dropdown-item" href="#">Statistics</a>
+                        </div>
+                    </li>
+                    <!-- drop down -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Computer Science</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">C++</a>
+                            <a class="dropdown-item" href="#">Data Structure/Algorithm</a>
+                        </div>
+                    </li>   
+                </ul>
+            </div>
+        </nav>
+
+        <!-- contents templete -->
+        <div class="jumbotron junbotron-fluid mb-0">
+            <div class="container mx-auto bg-light p-5 mb-5 shadow-lg">
+                <div class="row">
+                    <div class="container mb-5">
+                        <h1>Create Web Site</h1>
+                    </div>
+                   
+                    <!-- main view -->
+                    <div class="col-sm-9 col-9">
+                        <div id="Cover" class="bg-light">
+                            <h1>Cover</h1>
+                            <p>글쓰기</p>
+                        </div>
+                        <div id="section1" class="bg-light">    
+                            <h1>사전 조사</h1>
+                            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                        </div>
+                        <div id="section2" class="bg-light"> 
+                            <h1>Static Web Site & generator</h1>
+                            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                        </div>        
+                        <div id="section3class="bg-light">
+                            <h1>Section 3</h1>
+                            <div id="section3_1" class="bg-dark">         
+                                <h1>Section 3-1</h1>
+                                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                            </div>      
+                            <div id="section3_2" class="bg-dark">         
+                                <h1>Section 3-2</h1>
+                                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <!-- rail view -->
+                    <nav class="col-sm-3 col-3 " id="myScrollspy">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#section0">cover</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1">web basic concept</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2">static web site generator</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="section3">Section 3</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#section3_1">Link 1</a>
+                                    <a class="dropdown-item" href="#section3_2">Link 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+        
