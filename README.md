@@ -1,6 +1,5 @@
 # web
 web implementation
 
-working copy push feature operating?
-
-working branch test
+# hugo (postphoned)
+only mimic some hugo's directory structure
