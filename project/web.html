@@ -78,72 +78,96 @@
                     <!-- main view -->
                     <div class="col-sm-9 col-9">
                         <div class="mb-5 rounded-lg p-4" style="background-color:#eee">
-                            <p>이전부터 Tech-blog를 만들어 보고 싶다고는 생각을 했었다. 그래서 네이버 블로그나 티스토리 등을 이용해서 몇번 시도를 해보기는 했지만 썩 마음에 들지 않더라..<br><br>
-                            그렇게 한동안 잊고 지내고 있었는데, 요즘들어 지식의 체계화가 필요하단 생각이 들었다.<br>
-                            그때그때 필요한 자료를 조사하는 것도 좋지만, 자주 반복되다 보니 생각보다 진도가 나가지 못하고 시간이 낭비되고 있었다.<br>
-                            이를 위한 정보의 체계화 방안으로 진짜! 블로그를 만들어보기로 했다.<br><br>
-                            일단 나의 블로그의 목표는 다음과 같이 설정하였고, 이 블로그를 만들기 시작했다.
-                            <ul>
-                                <li>Simple Design</li>
-                                <li>포트폴리오</li>
-                                <li>공부한 내용의 체계화</li>
-                            </ul>
-                            <hr>
-                            reference:
-                            <ul>
-                                <li>생활코딩</li>
-                                <li>w3school</li>
-                            </ul>
+                            <p>이전부터 Tech-bloging을 해보자는 생각 했었다.<br><br>
+                            네이버 블로그, 티스토리 등으로 몇번의 시도가 있었지만 ... 개인적으로 마음에 들지도 않고, 오래 지속하지도 못했다.<br><br>
+                            그런데 요즘 다시 블로그를 만드는 것에 대해 필요성을 느꼈다.<br>
+                            일 외적으로 발전할 수 있는 동기가 필요했고, 학습한 정보들을 체계적으로 정리하고 싶었다.<br>
+                            그래서 웹 사이트 개발을 해보기로 결정하였다.<br><br>
+                            
+                            하지만 웹 개발은 나에게 정말 새로운 분야였기에 조사부터 시작해서, 이 사이트를 만들어가기 시작했다.
                             </p>
+                            <hr>
+                            reference :
+                                <ul>
+                                    <li><a href="https://opentutorials.org/course/1">생활코딩</a></li>
+                                    <li><a href="https://www.w3schools.com/default.asp">w3schools.com</a></li>
+                                </ul>
                         </div>
                         <div id="web_concept" class="mb-5 rounded-lg p-4" style="background-color:#eee">    
                             <h1>Web Basic Concepts</h1>
                             <p>
-                                <h4>html / web browser</h4>
-                                <h4>server / client</h4>
-                                <h4>html / css / javascript</h4>
-                                <h4>responsive / static / dynamic</h4>
+                                <h4>HTML / CSS / JavaScript</h4>
+                                우선 웹 개발을 하기 위해서는 다음의 3가지 언어가 무엇인지 알아야 했다.<br><br>
+                                <ul>
+                                    <li>HTML : define the content of web pages</li>
+                                    <li>CSS : specify the layout of web pages</li>
+                                    <li>JavaScript : program the behavior of web pages</li>
+                                </ul>
+                                간략히 집을 짓는 것에 비유하여 정리하자면,<br>
+                                <ul>
+                                    <li>HTML은 웹 페이지의 구조를 설계한다.</li>
+                                    <li>CSS는 이렇게 구조화된 것에 인테리어를 하듯이 style을 추가해 디자인을 입힌다.</li>
+                                    <li>JavaScript는 특정 요구에 맞춰 HTML과 CSS로 지어진 집에 변화를 준다.</li>
+                                </ul>
+                                
+                                
+
+                                결과적으로 웹 페이지란, HTML/CSS/JavaScript로 쓰여진 페이지에 대한 설계도라 볼 수 있다.<br><br>
+                                그렇다면 이 설계도를 어디에 쓸까?<br><br>
+
+                                <h4>Web Browser</h4>
+                                설계도가 있다고 우리는 집을 볼 수 없다.<br>
+                                마찬가지로 HTML 문서가 있다고 해서 우리는 이를 평소에 보는 웹 페이지처럼 볼 수 없다.
+                                이를 해결해주는 것이 우리가 평소에 사용하는 Chrome이나 IE와 같은 Web Browser이다.<br><br>
+
+                                web browser는 html 문서를 읽어, 약속된 형태로 브라우저 화면에 랜더링해주는 기능을 지니고 있다.<br>
+                                브라우저에서 F12를 누르면 브라우저가 랜더링하고 있는 .html을 살펴볼 수 있다.<br><br>
+
+
+                                <h4>Server/Client</h4>
+                                그렇다면 평소에 우리의 컴퓨터에서 웹 브라우져를 통해 다양한 웹 페이지를 볼 수 있다.<br>
+                                그럼, 이런 웹 페이지들의 html 문서는 어디서 얻는 것일까?<br><br>
+                                우리가 어떤 웹 사이트를 보기 위해서는 사이트 주소(url)를 입력한다.<br>
+                                우를 통해 우리는 웹 서버에 url에 해당하는 html 문서를 얻고, 브라우저가 이를 랜더링해주어 웹 페이지를 볼 수 있다.<br><br>
+
+                                즉, 우리는 web client로 pc나 mobile에서 web server에 접속해 html 문서를 요청하고, 이를 받아와 웹 브라우저로 랜더링하여 웹 페이지를 보는 것!<br><br>
+
+                                <h4>Responsive, Static/Dynamic</h4>
+                                web에 대해 찾아보면 반응형(responsive) 웹, 정적(static) 웹/동적(dynamic) 웹으로 web을 지칭하는 경우가 있다.<br>
+                                대략적으로 살펴본면 다음과 같을 것 같다.<br><br>
+                                <ul>
+                                    <li>반응형 웹 : 웹 브라우저의 상태(크기, 클릭 등)에 따라 웹 페이지가 변화하는 형태로 쓰여진 웹</li>
+                                    <li>정적 웹 : 웹 서버로부터 미리 정해진 형태의 웹 문서만을 받아오는 형태의 웹</li>
+                                    <li>동적 웹 : 웹 서버로부터 동적으로 변경된 문서를 받아 유저의 요청에 동적으로 페이지가 변화하는 웹</li>
+                                </ul>
+                                그렇다면 내가 만드려는 웹은 어떤 웹이 되어야 할까? 
+
+                                    
                             </p>
                         </div>
-                        <div id="section2" class="bg-light mb-5"> 
-                            <h1>Static Web Site & generator</h1>
+                        <div id="section2" class="mb-5 rounded-lg p-4" style="background-color:#eee"> 
+                            <h1>Web Architecture</h1>
                             <p>
-                                <ul>
-                                    <li>Jeykll</li>
-                                    <li>Hugo</li>
-                                </ul>
+                            <h4>web concept</h4>
+                            구상하는 웹 페이지는 개인용 블로그로 딱히 동적인 기능을 요하지 않는다.<br>
+                            따라서 정적인 페이지로 만들기로 결정하였고, +@ 로 가능하면 반응형으로 다양한 환경에서 보기좋은 디자인이 되었으면 했다<br><br>
+                            <h4>web hosting service</h4>
+                            이를 위해서는 static web을 서비스할 수 있는 웹 서버가 필요했다.<br>
+                            이 경우에는 이미 많은 사람들이 사용하고 있고, 개인적으로 사용이 익숙한 github에서 제공하는 <b>github page</b>라는 웹 호스팅 서비스를 사용하기로 했다<br><br>
+                            
+                            <h4>static site generator</h4>
+                            정적인 웹 사이트를 간단하게 만들고 관리하는데 도움이 되는 서비스로 static site generator가 있었다.<br>
+                            이는 웹 페이지의 많은 부분을 템플릿으로 만들어 놓고, 글을 쓸 경우 자동으로 웹 페이지를 조립해 웹 사이트를 만들어주는 기능을 가지고 있다.<br>
+                            관련해서는 <a href="https://dzone.com/articles/static-site-generators-overview-gatsby-vs-hugo-vs">다음</a>을 참고하였다.<br><br>
+                            
+                            개인 블로그를 만드는 것이여서, 성능적인 부분은 크게 구애받지 않았다.<br>
+                            다만 그 중에서도 관심이 있던 golang으로 만들어진 Hugo가 마음에 들어 살펴보았다.<br>
+                            
+                            정해진 directory structure 안에 미리 theme를 만들어두고, golang으로 scripting하여 페이지를 조립해주는 기능을 하는 것 처럼 보였다.<br>
+                            하지만 아직 (관심은 있지만..) 공부해보지 않음 go로 작성해야 하고, 제공되는 테마가 부족해 마음에 드는 theme를 찾지 못했다.<br>
+                            
+                            
                             </p>
-                        </div>        
-                        <div id="section3class=bg-light">
-                            <h1>Section 3</h1>
-                            <div id="section3_1" class="bg-dark">         
-                                <h1>Section 3-1</h1>
-                                <p>이전부터 Tech-blog를 만들어 보고 싶다고는 생각을 했었다. 그래서 네이버 블로그나 티스토리 등을 이용해서 몇번 시도를 해보기는 했지만 썩 마음에 들지 않더라..<br><br>
-                                    그렇게 한동안 잊고 지내고 있었는데, 요즘들어 지식의 체계화가 필요하단 생각이 들었다.<br>
-                                    그때그때 필요한 자료를 조사하는 것도 좋지만, 자주 반복되다 보니 생각보다 진도가 나가지 못하고 시간이 낭비되고 있었다.<br>
-                                    이를 위한 정보의 체계화 방안으로 진짜! 블로그를 만들어보기로 했다.<br><br>
-                                    일단 나의 블로그의 목표는 다음과 같이 설정하였고, 이 블로그를 만들기 시작했다.
-                                    <ul>
-                                        <li>간결한 디자인</li>
-                                        <li>포트폴리오 작성</li>
-                                        <li>공부한 내용 정리</li>
-                                    </ul>
-                                    </p>
-                            </div>      
-                            <div id="section3_2" class="bg-dark">         
-                                <h1>Section 3-2</h1>
-                                <p>이전부터 Tech-blog를 만들어 보고 싶다고는 생각을 했었다. 그래서 네이버 블로그나 티스토리 등을 이용해서 몇번 시도를 해보기는 했지만 썩 마음에 들지 않더라..<br><br>
-                                    그렇게 한동안 잊고 지내고 있었는데, 요즘들어 지식의 체계화가 필요하단 생각이 들었다.<br>
-                                    그때그때 필요한 자료를 조사하는 것도 좋지만, 자주 반복되다 보니 생각보다 진도가 나가지 못하고 시간이 낭비되고 있었다.<br>
-                                    이를 위한 정보의 체계화 방안으로 진짜! 블로그를 만들어보기로 했다.<br><br>
-                                    일단 나의 블로그의 목표는 다음과 같이 설정하였고, 이 블로그를 만들기 시작했다.
-                                    <ul>
-                                        <li>간결한 디자인</li>
-                                        <li>포트폴리오 작성</li>
-                                        <li>공부한 내용 정리</li>
-                                    </ul>
-                                    </p>
-                            </div>
                         </div>
                     </div>
                         
@@ -157,7 +181,7 @@
                                 <a class="nav-link" href="#web_concept">web basic concept</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section2">static web site generator</a>
+                                <a class="nav-link" href="#section2">Web Architecture</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="section3">Section 3</a>
