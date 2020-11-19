@@ -36,20 +36,20 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="post.html">Post</a>
                     </li>
-
-                    <!-- refactor
                     <li class="nav-item active">
-                        <a class="nav-link" href="sub/study.html">Study</a>
+                        <a class="nav-link" href="project.html">Project</a>
                     </li>
-                    -->
+                    
                     <!-- drop down -->
+                    <!-- refactor
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Project</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="index.html">Web</a>
-                            <a class="dropdown-item" href="project.html">Project</a>
+                            <a class="dropdown-item" href="project.html">Youtube</a>
                         </div>
                     </li>
+                    -->
                 </ul>
             </div>
         </nav>
@@ -60,16 +60,16 @@
                     <div class="row m-0">
                         <div class="col-8-sm col-8 p-0">
                             <h1><b>Minjae Cheon</b></h1>
-                            <h3 style="color:#999">Software Engineer</h3>
-                            <ul style="list-style:none; padding-left:5px;">
-                                <li><i class="fas fa-phone-square"></i> 010 9369 5202</li>
-                                <li><i class="fas fa-envelope"></i> <a href="mailto:cheonminjae225@gmail.com" title="home">cheonminjae225@gmail.com</a></li>
-                                <li><i class="fas fa-map-marker-alt"></i> Seoul</li>
-                                <li><i class="fab fa-github-square"></i> <a href="https://github.com/cmj225">https://github.com/cmj225</a></li>
+                            <h3 style="color:#999; margin-bottom: 1vw;">Software Engineer</h3>
+                            <ul style="list-style:none; padding-left:5px; display:flex; flex-direction: column;">
+                                <li><div style="display: flex; flex-direction: row;"><div style="width: 20px"><i class="fas fa-phone-square"></i></div><div style="margin-left:10px; font-weight: 500;">010.9369.5202</div></div></li>
+                                <li><div style="display: flex; flex-direction: row;"><div style="width: 20px"><i class="fas fa-envelope"></i></div> <div style="margin-left:10px; font-weight: 500;"><a href="mailto:cheonminjae225@gmail.com" title="home">cheonminjae225@gmail.com</a></span></li>
+                                <li><div style="display: flex; flex-direction: row;"><div style="width: 20px"><i class="fas fa-map-marker-alt"></i></div><div style="margin-left:10px; font-weight: 500;">Seoul</div></li>
+                                <li><div style="display: flex; flex-direction: row;"><div style="width: 20px"><i class="fab fa-github-square"></i></div><div style="margin-left:10px; font-weight: 500;"><a href="https://github.com/cmj225">https://github.com/cmj225</a></div></li>
                             </ul>
                         </div>
                         <div class="col-4-sm col-4 p-0 " style="text-align:right;">
-                            <img src="photo.jpg" class="img-thumbnail rounded-lg p-0" style="width:100%; max-width: 150px;">
+                            <img src="resource/photo.jpg" class="img-thumbnail rounded-lg p-0" style="width:100%; max-width: 160px;">
                         </div>
                     </div>
                 </div><hr>
@@ -90,48 +90,84 @@
                     <div class="fluid-container">
                         <h5 style="border-left:solid 6px #555; padding:0px 10px;">WORK EXPERIENCE</h5><br>
                         <div class="row m-0">
-                            <div class="col-6-sm col-6 pl-0">
+                            <div class="col-6-sm col-6 pl-0" style="margin-bottom: 10px;">
                                 <h6>Software Engineer</h6>
                             </div>
                             <div class="col-6-sm col-6 p-0" style="text-align:right;">
                                 <h6>TmaxOS | 2018 - present</h6>
                             </div>
-                            <p class="mb-0">multimedia framework maintanence</p>
-                            <p>Windows multimedia framework compatible layer developement</p>
+                            <div class="col-12">
+                                <p class="mb-0" style="font-weight: 500;  padding-bottom: 5px">multimedia framework developement</p>
+                                <p style="font-weight: 500; opacity: 0.8;">
+                                    - analysis FFmpeg library<br>
+                                    - develop multimedia framework<br>
+                                    - develop video player, streaming<br>
+                                    - develop decoding/encoding module<br>
+                                </p>
+                                <p class="mb-0" style="font-weight: 500; padding-bottom: 5px">Windows multimedia compatible layer developement</p>
+                                <p style="font-weight: 500; opacity: 0.8;">
+                                    - compatible layer development for quartz.dll operating in Linux(TOS) environment<br>
+                                    - analysis DirectShow and portiong DirectShow SDK<br>
+                                    - develop filter graph manager & some basic DirectShow filters (Demuxer, Decoder, VMR9)<br>
+                                </p>
+                            </div>
                         </div>
+                        
+                        <br>
+
                         <div class="row m-0 p-0">
-                            <div class="col-6-sm col-6 pl-0">
+                            <div class="col-6-sm col-6 pl-0" style="margin-bottom: 10px;">
                                 <h6>Intern</h6>
                             </div>
                             <div class="col-6-sm col-6 p-0" style="text-align:right;">
                                 <h6>Mando | 2017.7 - 2017.10</h6>
                             </div>
-                            <p>ADAS components purchasing and supply chain management</p>
+                            <div class="col-12">
+                                <p class="mb-0" style="font-weight: 500;  padding-bottom: 5px">ADAS components purchasing and supply chain management</p>
+                                <p style="font-weight: 500; opacity: 0.8;">
+                                    - ADAS components SCM
+                            </div>
                         </div>
                     </div><hr>
 
                     <div class="fluid-container">
                         <h5 style="border-left:solid 6px #555; padding:0px 10px;">SKILLS</h5><br>
-                        <h6>Platforms</h6>
-                        <p>Linux, Windows</p>
+                        <h6>Platform</h6>
+                        <p style="font-weight: 500; opacity: 0.8;">Linux, Windows</p>
                         <h6>Program language</h6>
-                        <p>C/C++, Python, HTML, CSS, JavaScript</p>
-                        <h6>Tools</h6>
-                        <p>DirectShow, Media Foundation, FFmpeg</p>
+                            <p style="font-weight: 500; opacity: 0.8;"> 
+                                C, C++ <br>
+                                Python <br>
+                                HTML, CSS, JavaScript <br>
+                            </p>
+                        <h6>Library/Framework</h6>
+                        <p style="font-weight: 500; opacity: 0.8;">FFmpeg, DirectShow</p>
                     </div><hr>
 
+                    <!--
+                    <div class="fluid-container">
+                        <h5 style="border-left:solid 6px #555; padding:0px 10px;">PROJECT</h5><br>
+                        <h6>Youtube Cloning</h6>
+                        <p style="font-weight: 500; opacity: 0.8;">cloning youtube : VOD Streaming, Live Streaming</p>
+                    </div><hr>
+                    -->
+
+                    <!--
                     <div class="fluid-container"></div>
                         <h5 style="border-left:solid 6px #555; padding:0px 10px;">CERTIFICATE</h5><br>
                         <h6>unknown</h6>
                         <p>ing</p>
                     </div><hr>
+                    -->
                 </div>     
             </div>   
         </div>
     
         <!-- page footer -->
         <div class="jumbotron text-center" style="margin-bottom:0px;">
+            <!--
             <p>page footer</p>
+            -->
         </div>
     </body>
 </html>
